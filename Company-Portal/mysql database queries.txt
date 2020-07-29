@@ -1,0 +1,62 @@
+create database project;
+ 
+use project;
+
+
+------products database-----------
+ 
+create table products(pid int(20), name varchar(20), category varchar(20),brand varchar(20), colour varchar(20), availability varchar(20));
+
+insert into products values(0001, 'rockstrong p01', 'quick hardening', 'rockstrong', 'dark grey', 'yes');
+
+insert into products values(0012, 'bangur pride', 'quick setting', 'Bangur', 'grey', 'yes');
+
+insert into products values(0037, 'rockstrong lh500', 'low heat', 'rockstrong', 'white', 'under development');
+
+insert into products values(0008, 'shree ultra redcap', 'red oxide', 'shree ultra', 'dark grey', 'yes');
+
+
+------Dealership database---------
+
+create table dealership(dealer_name varchar(20), phone varchar(20), product varchar(20), state varchar(20), city varchar(20), contract_period varchar(20));
+
+insert into dealership values("jay prakash", 856932467, "bangur", "rajasthan", "jaisalmer", 5);
+
+insert into dealership values("rajendra sharma", 8956874585, "shree ultra red", "tamil nadu", "chennai", 4);
+
+insert into dealership values("jose varghese",9829685854 , "rockstrong sloid, bangur large cmpr", "NCR", "delhi", 2);
+
+insert into dealership values("jagdish thakur", 8754962135, "bangur JCL white", "delhi", "delhi", 2);
+
+
+------Employee database-----------
+create table employee(id int(20), name varchar(20), address varchar(100), date_of_birth varchar(20), sex varchar(20), department varchar(20), date_of_joining varchar(20), mobile_number varchar(20), password varchar(45));
+
+insert into employee values(154, 'ravindra jain', 'b-199 janta colony delhi', '12/1/1985', 'male', 'sales', '15/8/2010', '7895685469', 'jai1985');
+
+insert into employee values(15, 'nidhi vijay', '90/89 vijay path mansarovar jaipur', '1/5/1989', 'female', 'products', '5/5/2009', '7891859689', 'vi101');
+
+insert into employee values(875, ' arvind gupta', '88/78 patel marg mansarover jaipur', '07/02/1979', 'male', 'finance', '15/12/2005', '8576421536', 'arv_79');
+
+insert into employee values(744, 'sharmila bose', 'p-block radhamadhav apartments jaipur', '07/02/1985', 'female', 'developement', '05/02/2010', '9874215635', '744@shr');
+
+insert into employee values(587, 'yogi prasad', 'd-90 shiv shakti villas tonk road jaipur', '08/01/1966', 'male', 'sales', '18/05/1993', '7784596584', 'yps444');
+
+
+------report database-------------
+create table report(name varchar(50), department varchar(100), report varchar(9999));
+
+insert into report values("nidhi vijay", "production", "production status G.P. registered 7%
+production on full swing
+request for 5 units of rotor platforms");
+
+insert into report values("ravindra jain", "sales", "january 2016/prf details/sales recorded 47 units bangur
+450 units rockstrong
+874 units shree red oxide");
+
+
+------admin database--------------
+create table admin(name varchar(20), password varchar(20));
+
+insert into admin values("rajendra bose", "mysql101");
+
