@@ -1,4 +1,5 @@
 package Networking.HTTPDemo;
+
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
@@ -44,12 +45,12 @@ public class HttpDemo {
          * 1. response body
          * 2. TypeReference; which basically means what type of JSON are we going to parse
          * */
-        List<Todo> todoList = mapper.readValue(res.body(), new TypeReference<List<Todo>>(){});
-
-        todoList.forEach((item)->{
-            System.out.println(item);
+        List<Todo> todoList = mapper.readValue(res.body(), new TypeReference<List<Todo>>() {
         });
 
+        todoList.forEach((item) -> {
+            System.out.println(item);
+        });
 
     }
 }
