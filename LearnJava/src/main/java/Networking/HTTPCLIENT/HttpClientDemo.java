@@ -1,4 +1,4 @@
-package Networking.HTTPDemo;
+package Networking.HTTPCLIENT;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -9,7 +9,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.List;
 
-public class HttpDemo {
+public class HttpClientDemo {
 
     // Sample JSON API URI
     private static final String API_link = "https://jsonplaceholder.typicode.com/todos";

@@ -2,7 +2,7 @@
  * This is an entry point class
  * */
 
-import static Networking.HTTPDemo.HttpDemo.HTTP_Demo;
+import static Networking.HTTPCLIENT.HttpClientDemo.HTTP_Demo;
 import static DesignPatterns.DI.DepInjectDemo.DI_Demo;
 
 public class Index {

@@ -1,4 +1,4 @@
-package Networking.HTTPDemo;
+package Networking.HTTPCLIENT;
 
 public class Todo {
     private int userId;
