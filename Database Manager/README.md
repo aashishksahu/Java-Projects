@@ -13,7 +13,7 @@ Navigate to ```Database Manager\dist``` and run ```Database_Manager.jar```
 * A Windows/Linux/Mac computer that is good enough to run Chrome
 
 ## Screenshots
-![img](https://github.com/aashishksahu/Projects/blob/master/Database%20Manager/img/mainWindow.PNG)
-![img](https://github.com/aashishksahu/Projects/blob/master/Database%20Manager/img/Create.PNG)
-![img](https://github.com/aashishksahu/Projects/blob/master/Database%20Manager/img/View.PNG)
-![img](https://github.com/aashishksahu/Projects/blob/master/Database%20Manager/img/delete.PNG)
+![img](https://github.com/aashishksahu/Java-Projects/blob/master/Database%20Manager/img/mainWindow.PNG)
+![img](https://github.com/aashishksahu/Java-Projects/blob/master/Database%20Manager/img/Create.PNG)
+![img](https://github.com/aashishksahu/Java-Projects/blob/master/Database%20Manager/img/View.PNG)
+![img](https://github.com/aashishksahu/Java-Projects/blob/master/Database%20Manager/img/delete.PNG)
