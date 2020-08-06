@@ -1,9 +1,12 @@
 package Networking.SOCKET;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
+
 
 public class TerminalChatServer {
 
@@ -20,9 +23,26 @@ public class TerminalChatServer {
         newClient = chatServerListener.accept();
         
         PrintWriter sender = new PrintWriter(newClient.getOutputStream(), true);
-        sender.println("Message from Server");
+        BufferedReader reader = new BufferedReader(new InputStreamReader(newClient.getInputStream()));
+        BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+
+        while(true){
+            System.out.print(">> ");
+            String serverMsg = keyboard.readLine();
+
+            if(serverMsg.equals("exit")){
+                break;
+            }
+
+            sender.println(serverMsg);
+
+            String clientMsg = reader.readLine();
+            System.out.println(">> "+clientMsg);
+
+
+        }        
+
         
-        System.out.println("[Server] Message Sent");
         newClient.close();
         chatServerListener.close();
 
