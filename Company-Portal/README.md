@@ -1,4 +1,4 @@
-# Company-E-Portal
+# Company-Portal
 
 This is a company portal for information & management of the customers & staff:-
 
